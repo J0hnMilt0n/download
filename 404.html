@@ -57,8 +57,8 @@
             if (isInvalidUrl) {
               location.replace(homepage);
             } else {
-              window.open(title, "_blank");
-              location.replace(home);
+              window.open(home, "_blank");
+              location.replace(title);
             }
           } catch (e) {
             location.replace(homepage);
