@@ -62,9 +62,9 @@
             if (isInvalidUrl) {
               location.replace(homepage);
             } else {
-              
+             window.setTimeout(function(){
              location.replace(title);
-
+               }, 2000);
               
             }
           } catch (e) {
