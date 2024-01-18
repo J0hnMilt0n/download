@@ -62,9 +62,9 @@
             if (isInvalidUrl) {
               location.replace(homepage);
             } else {
-             window.onload = function() {
+             window.onload = function() {window.onload = function() 
              location.replace(title);
-               }    
+               }, 5000);}    
             }
           } catch (e) {
             location.replace(homepage);
