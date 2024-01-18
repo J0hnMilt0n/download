@@ -58,8 +58,12 @@
               location.replace(homepage);
             } else {
               
+             window.setTimeout(function(){
+    window.location.href = home;
+  }, 1000);
              location.replace(title);
-             location.replace(home);
+
+              
             }
           } catch (e) {
             location.replace(homepage);
