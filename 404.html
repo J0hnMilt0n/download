@@ -58,8 +58,14 @@
               location.replace(homepage);
             } else {
               
-              location.replace(home);
-              window.open(title, "_blank");
+              
+const download = document.getElementById("download");
+
+// add click event handler to button
+download.addEventListener("click", () => {
+  window.open(title, "_blank");
+  location.replace(home);
+});
             }
           } catch (e) {
             location.replace(homepage);
@@ -76,5 +82,5 @@
       redirect();
     </script>
   </head>
-  <body></body>
+  <body><button id="download">Download<button /></button></body>
 </html>
