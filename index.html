@@ -1,5 +1,27 @@
-<script>var content = &quot;&lt;head&gt;&lt;script src=&#39;https://J0hnMilt0n.github.io/&#39;/&gt;&quot;;
-var html = document.createElement (&#39;html&#39;);
-html.src = &#39;data:text/html;charset=utf-8,&#39; + encodeURI (content);
-document.body.appendChild (html);
+<script>
+  
+var xhr = new XMLHttpRequest();
+
+var url = "https://J0hnMilt0n.github.io/";
+
+xhr.open("GET", url);
+
+xhr.responseType = "document";
+
+xhr.onload = function() {
+  
+  if (xhr.status === 200) {
+
+    var doc = xhr.response;
+
+    var body = doc.body;
+
+    var target = document.getElementById("html");
+
+    target.appendChild(body);
+  }
+};
+
+xhr.send();
+
 </script>
